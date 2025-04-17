@@ -1,4 +1,4 @@
-import { Component, Inject, PLATFORM_ID, OnInit} from '@angular/core';
+import { Component, Inject, PLATFORM_ID, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { NgxMarqueeComponent } from '@omnedia/ngx-marquee';
 import 'intersection-observer';
@@ -9,14 +9,13 @@ import { isPlatformBrowser } from '@angular/common';
   standalone: true,
   imports: [NgxMarqueeComponent],
   templateUrl: './projbody.component.html',
-  styleUrl: './projbody.component.css'
+  styleUrl: './projbody.component.css',
 })
 export class ProjbodyComponent implements OnInit {
-
   isBrowser: boolean = false;
 
   constructor(
-    @Inject(PLATFORM_ID) private platformId: Object, 
+    @Inject(PLATFORM_ID) private platformId: Object,
     private router: Router
   ) {}
 
@@ -52,5 +51,8 @@ export class ProjbodyComponent implements OnInit {
 
   allProjects() {
     this.router.navigateByUrl('allprojects');
+  }
+  weddingCase() {
+    this.router.navigateByUrl('casestudy');
   }
 }

@@ -6,13 +6,13 @@
   font-family: "Archivo", sans-serif;
   display: flex;
   flex-direction: column;
-  gap: 80px;
+  gap: 40px;
   overflow-x: hidden;
 }
 .project__grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 15px;
+  gap: 40px;
 }
 .nav__bar {
   background: #141414;
@@ -100,7 +100,7 @@
 .project__mid__bottom {
   height: 400px;
   width: 100%;
-  background: url(../../asset/mli1.png);
+  background: url(../../asset/MLIwebsite.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -118,12 +118,40 @@
 .project__mid__bottomTwo {
   height: 400px;
   width: 100%;
-  background: url(../../asset/Group\ 1171275077.png);
+  background: url(../../asset/special24.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   border-radius: 24px;
 }
+.project__mid__bottomCowry {
+  height: 400px;
+  width: 100%;
+  background: url(../../asset/Cowrywise.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 24px;
+}
+.project__mid__bottomIvis {
+  height: 400px;
+  width: 100%;
+  background: url(../../asset/IVIS\ School.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  border-radius: 24px;
+}
+.project__mid__bottomMiv {
+  height: 400px;
+  width: 100%;
+  background: url(../../asset/MIVwebsite.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  border-radius: 24px;
+}
+
 .mid__top {
   display: flex;
   align-items: center;

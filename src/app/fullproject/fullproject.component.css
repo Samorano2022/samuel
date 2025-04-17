@@ -1,7 +1,7 @@
 .body {
   height: 100%;
 }
-om-dotpattern{
+om-dotpattern {
   overflow: hidden;
   width: 95%;
   margin: auto;
@@ -25,7 +25,10 @@ a {
   gap: 40px;
   /* margin-left: 16px; */
 }
-
+.copyright {
+  color: white;
+  height: 40px;
+}
 .header__container {
   width: 80%;
   margin: auto;
@@ -108,7 +111,7 @@ a {
   line-height: 180%;
 }
 
-.mobile__header{
+.mobile__header {
   display: none;
 }
 .hero__cardd {
@@ -169,11 +172,11 @@ a {
 .about:hover,
 .expertise:hover,
 .project:hover,
-.resume:hover, .contact:hover {
+.resume:hover,
+.contact:hover {
   color: #9587ff !important;
   text-decoration: underline;
 }
-
 
 @media screen and (max-width: 1024px) {
   .hero {
@@ -216,7 +219,6 @@ a {
   .header__container {
     display: flex;
     justify-content: space-between;
-
   }
 }
 
@@ -276,7 +278,7 @@ a {
     border-radius: 24px;
     -webkit-backdrop-filter: blur(20px);
     backdrop-filter: blur(20px);
-}
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -346,7 +348,7 @@ a {
     border-radius: 24px;
     -webkit-backdrop-filter: blur(20px);
     backdrop-filter: blur(20px);
-}
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -367,23 +369,23 @@ a {
     background: rgba(255, 255, 255, 0);
     transition: all ease-in-out 250ms;
   }
-.mobile__container{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-  position: absolute;
-  top: 0;
-  height: 80px;
-  background: rgba(255, 255, 255, 0);
-  transition: all ease-in-out 250ms;
-}
+  .mobile__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    height: 80px;
+    background: rgba(255, 255, 255, 0);
+    transition: all ease-in-out 250ms;
+  }
   p {
     font-size: 84px;
   }
-.header__container{
-  display: none;
-}
+  .header__container {
+    display: none;
+  }
   .name {
     font-size: 24px;
   }
