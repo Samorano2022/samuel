@@ -6,7 +6,7 @@
   border-radius: 0px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
 }
-.about__section{
+.about__section {
   height: 100%;
   width: 100vw;
   background-color: #1d1d1d;
@@ -46,7 +46,7 @@ header p {
 .contact-method i {
   font-size: 17px;
   font-family: "Archivo", sans-serif;
-font-weight: 200;
+  font-weight: 200;
   /* margin-right: 15px; */
 }
 
@@ -60,7 +60,9 @@ font-weight: 200;
   /* text-transform: uppercase; */
 }
 
-.whatsapp, .email, .linkedin{
+.whatsapp,
+.email,
+.linkedin {
   background-color: #dfdee3;
   color: var(--gold);
 }
@@ -92,9 +94,9 @@ font-weight: 200;
   margin: auto;
   border-radius: 100px;
   position: fixed;
-  box-shadow: -7px -6px 244px 5px rgba(31,27,202,0.75);
--webkit-box-shadow: -7px -6px 244px 5px rgba(31,27,202,0.75);
--moz-box-shadow: -7px -6px 244px 5px rgba(31,27,202,0.75);
+  box-shadow: -7px -6px 244px 5px rgba(31, 27, 202, 0.75);
+  -webkit-box-shadow: -7px -6px 244px 5px rgba(31, 27, 202, 0.75);
+  -moz-box-shadow: -7px -6px 244px 5px rgba(31, 27, 202, 0.75);
 }
 .about__card {
   background: #181717;
@@ -135,7 +137,7 @@ font-weight: 200;
   gap: 52px;
   /* padding-top: 55px; */
 }
-.about__bottomcontainer{
+.about__bottomcontainer {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -195,7 +197,7 @@ font-weight: 200;
   font-optical-sizing: auto;
   color: #a3a3a3;
 }
-hr{
+hr {
   color: #6e6e73 !important;
   opacity: 0.1;
 }
@@ -226,7 +228,7 @@ ul {
 
 ul li {
   list-style: none;
-  color: #C4C4C4;
+  color: #c4c4c4;
   font-family: "Archivo", sans-serif;
   font-size: 16px;
   font-weight: 400;
@@ -235,7 +237,7 @@ ul li:hover {
   cursor: pointer;
   color: #9587ff !important;
 }
-.expertise{
+.expertise {
   width: 100vw;
 }
 
@@ -245,5 +247,58 @@ ul li:hover {
     flex-direction: row;
     gap: 12px;
     /* justify-content: space-between; */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  ul {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 24px;
+  }
+
+  ul li {
+    list-style: none;
+    color: #c4c4c4;
+    font-family: "Archivo", sans-serif;
+    font-size: 10px;
+    font-weight: 400;
+  }
+  .description {
+    font-size: 20px;
+    color: #efefef;
+    font-family: "Archivo", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    line-height: 140%;
+  }
+  .about__bottom {
+    width: 100%;
+    height: 100%;
+    background: #3827c7;
+    padding: 26px 26px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .contact-method span {
+    font-weight: 600;
+    font-size: 16px;
+  }
+  .exp__text {
+    font-family: "Archivo", sans-serif;
+    font-size: 12px;
+    font-weight: 200;
+    line-height: 150%;
+    color: var(--white);
+  }
+  .about__card {
+    background: #181717;
+    height: 100%;
+    width: 100%;
+    padding-bottom: 60px;
+    margin-top: 30%;
   }
 }

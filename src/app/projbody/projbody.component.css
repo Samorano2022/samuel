@@ -6,7 +6,7 @@
   font-family: "Archivo", sans-serif;
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 20px;
   overflow-x: hidden;
 }
 .project__grid {
@@ -218,7 +218,7 @@ span {
   text-decoration: none;
 }
 .link__one a:hover {
-  color: var(--gold);
+  color: var(--blue);
   cursor: pointer;
 }
 .link__two {
@@ -260,6 +260,7 @@ ul li:hover {
   flex-direction: column;
   position: relative;
   width: 100vw;
+  height: auto;
   overflow: hidden;
 }
 
@@ -284,7 +285,7 @@ ul li:hover {
   color: purple;
 }
 .card1 {
-  height: 650px;
+  height: 450px;
   width: 750px;
   background: url(../../asset/fastest\ delivery.png);
   background-size: contain;
@@ -302,7 +303,7 @@ ul li:hover {
   opacity: 1; /* Shows the dark overlay on hover */
 }
 .card2 {
-  height: 650px;
+  /* height: 650px; */
   width: 750px;
   background: url(../../asset/card2.png);
   background-size: contain;
@@ -313,7 +314,8 @@ ul li:hover {
   justify-content: center;
 }
 .card3 {
-  height: 650px;
+  height: 450px;
+
   width: 750px;
   background: url(../../asset/card3.png);
   background-size: contain;
@@ -324,7 +326,8 @@ ul li:hover {
   justify-content: center;
 }
 .card4 {
-  height: 650px;
+  height: 450px;
+
   width: 750px;
   background: url(../../asset/card4.png);
   background-size: contain;
@@ -335,7 +338,8 @@ ul li:hover {
   justify-content: center;
 }
 .card5 {
-  height: 650px;
+  height: 450px;
+
   width: 750px;
   background: url(../../asset/natureHub.png);
   background-size: contain;
@@ -346,7 +350,8 @@ ul li:hover {
   justify-content: center;
 }
 .card6 {
-  height: 650px;
+  height: 450px;
+
   width: 750px;
   background: url(../../asset/booqhotel.png);
   background-size: contain;
@@ -357,7 +362,8 @@ ul li:hover {
   justify-content: center;
 }
 .card7 {
-  height: 650px;
+  height: 450px;
+
   width: 750px;
   background: url(../../asset/card7.png);
   background-size: contain;
@@ -368,7 +374,8 @@ ul li:hover {
   justify-content: center;
 }
 .card8 {
-  height: 650px;
+  height: 450px;
+
   width: 750px;
   background: url(../../asset/card8.png);
   background-size: contain;
@@ -409,18 +416,107 @@ ul li:hover {
     margin: auto;
   }
 }
-@media (max-width: px) {
+
+@media screen and (max-width: 480px) {
   .project__grid {
     display: grid;
     grid-template-columns: 1fr;
     gap: 45px;
   }
+  .project__paragraph {
+    width: 80%;
+    font-size: 15px;
+    margin: auto;
+  }
+  .project__section {
+    padding-bottom: 0;
+  }
+  .project__heading {
+    font-family: "Archivo", sans-serif;
+    font-size: 18px;
+    color: #efefef;
+    font-weight: 400;
+  }
+
+  ul {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 24px;
+  }
+
+  ul li {
+    list-style: none;
+    color: #c4c4c4;
+    font-family: "Archivo", sans-serif;
+    font-size: 10px;
+    font-weight: 400;
+  }
+  .project__top {
+    height: 100%;
+    background: #181717;
+    display: flex;
+    flex-direction: column;
+    padding: 60px 0;
+    gap: 40px;
+    margin-top: 90px;
+  }
   .project__description {
-    font-size: 30px;
+    font-size: 22px;
+    line-height: 130%;
   }
   .project__paragraph {
     width: 80%;
     font-size: 15px;
     margin: auto;
+    line-height: 150%;
+  }
+
+  .project__mid {
+    padding: 30px 0;
+  }
+  .card1,
+  .card2,
+  .card3,
+  .card4,
+  .card5,
+  .card6,
+  .card7,
+  .card8 {
+    height: 200px;
+    width: 200px;
+  }
+  .view__btn {
+    width: 80%;
+    height: 48px;
+    color: white;
+    background: var(--blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+    margin-top: 20px;
+  }
+  .link__one,
+  .link__two {
+    margin-top: 30px;
+  }
+  .link__one a {
+    padding: 16px 36px;
+    border: 1px solid #9587ff;
+    background: var(--blue);
+    border-radius: 100px;
+  }
+  .link__two {
+    padding: 16px 36px;
+    border: 1px solid #9587ff;
+    background: #9587ff;
+    border-radius: 100px;
+  }
+  .btn__link {
+    display: flex;
+    gap: 15px;
+    align-items: center;
   }
 }

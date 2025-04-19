@@ -55,3 +55,30 @@
   cursor: pointer;
   border: none;
 }
+
+@media screen and (max-width: 480px) {
+  .resume__body {
+    width: 90%;
+    margin: auto;
+    height: 80vh;
+  }
+  .back__btn {
+    width: 100px;
+    height: 42px;
+    color: var(--black);
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 16px;
+    border-radius: 100px;
+    border: 1px solid black;
+    margin-bottom: 24px;
+    font-family: "Archivo", sans-serif;
+    font-weight: 400;
+    margin-top: 14px;
+  }
+  .resume__title {
+    font-size: 45px;
+  }
+}

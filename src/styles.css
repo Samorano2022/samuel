@@ -1,88 +1,89 @@
 /* You can add global styles to this file, and also import other style files */
 /* @import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap'); */
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
-:root{
-    --gold: #3827c7;
-    --blue: #3827c7;
-    --light-blue: #c0baef; 
-    /* --gold: #d3f350; */
-    --black: #1a1a1a;
-    --white:#fafef7;
+:root {
+  --gold: #3827c7;
+  --blue: #3827c7;
+  /* --blue: #6c9a00; */
+  --light-blue: #c0baef;
+  /* --gold: #d3f350; */
+  --black: #1a1a1a;
+  --white: #fafef7;
 }
 
 /* Modular scale font sizes */
 .h1 {
-    font-size: 2.5rem; /* 40px (Based on scale, could also be 2.25rem or 2.625rem based on scale chosen) */
-    font-weight: 700; /* Bold font */
-    margin: 0.5em 0;
-  }
-  
-  .h2 {
-    font-size: 2rem; /* 32px */
-    font-weight: 700;
-    margin: 0.5em 0;
-  }
-  
-  .h3 {
-    font-size: 1.75rem; /* 28px */
-    font-weight: 600;
-    margin: 0.5em 0;
-  }
-  
-  .h4 {
-    font-size: 1.5rem; /* 24px */
-    font-weight: 600;
-    margin: 0.5em 0;
-  }
-  
-  .h5 {
-    font-size: 1.25rem; /* 20px */
-    font-weight: 500;
-    margin: 0.5em 0;
-  }
-  
-  .h6 {
-    font-size: 1.125rem; /* 18px */
-    font-weight: 500;
-    margin: 0.5em 0;
-  }
-  
-  /* Paragraph and text elements */
-  .p {
-    font-size: 1rem; /* 16px */
-    margin-bottom: 1.5em; /* Add spacing between paragraphs */
-  }
-  
-  .small {
-    font-size: 0.875rem; /* 14px for fine print */
-  }
-  
-  .strong {
-    font-weight: bold;
-  }
-  
-  .em {
-    font-style: italic;
-  }
-  
-  /* Utility Classes for additional text styles */
-  .text-xs {
-    font-size: 0.75rem; /* 12px */
-  }
-  
-  .text-sm {
-    font-size: 0.875rem; /* 14px */
-  }
-  
-  .text-lg {
-    font-size: 1.125rem; /* 18px */
-  }
-  
-  .text-xl {
-    font-size: 1.25rem; /* 20px */
-  }
+  font-size: 2.5rem; /* 40px (Based on scale, could also be 2.25rem or 2.625rem based on scale chosen) */
+  font-weight: 700; /* Bold font */
+  margin: 0.5em 0;
+}
+
+.h2 {
+  font-size: 2rem; /* 32px */
+  font-weight: 700;
+  margin: 0.5em 0;
+}
+
+.h3 {
+  font-size: 1.75rem; /* 28px */
+  font-weight: 600;
+  margin: 0.5em 0;
+}
+
+.h4 {
+  font-size: 1.5rem; /* 24px */
+  font-weight: 600;
+  margin: 0.5em 0;
+}
+
+.h5 {
+  font-size: 1.25rem; /* 20px */
+  font-weight: 500;
+  margin: 0.5em 0;
+}
+
+.h6 {
+  font-size: 1.125rem; /* 18px */
+  font-weight: 500;
+  margin: 0.5em 0;
+}
+
+/* Paragraph and text elements */
+.p {
+  font-size: 1rem; /* 16px */
+  margin-bottom: 1.5em; /* Add spacing between paragraphs */
+}
+
+.small {
+  font-size: 0.875rem; /* 14px for fine print */
+}
+
+.strong {
+  font-weight: bold;
+}
+
+.em {
+  font-style: italic;
+}
+
+/* Utility Classes for additional text styles */
+.text-xs {
+  font-size: 0.75rem; /* 12px */
+}
+
+.text-sm {
+  font-size: 0.875rem; /* 14px */
+}
+
+.text-lg {
+  font-size: 1.125rem; /* 18px */
+}
+
+.text-xl {
+  font-size: 1.25rem; /* 20px */
+}

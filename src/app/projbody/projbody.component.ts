@@ -3,11 +3,12 @@ import { Router } from '@angular/router';
 import { NgxMarqueeComponent } from '@omnedia/ngx-marquee';
 import 'intersection-observer';
 import { isPlatformBrowser } from '@angular/common';
+import { ContactComponent } from "../contact/contact.component";
 
 @Component({
   selector: 'app-projbody',
   standalone: true,
-  imports: [NgxMarqueeComponent],
+  imports: [NgxMarqueeComponent, ContactComponent],
   templateUrl: './projbody.component.html',
   styleUrl: './projbody.component.css',
 })
