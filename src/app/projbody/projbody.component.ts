@@ -1,9 +1,9 @@
 import { Component, Inject, PLATFORM_ID, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { NgxMarqueeComponent } from '@omnedia/ngx-marquee';
-import 'intersection-observer';
+// import 'intersection-observer';
 import { isPlatformBrowser } from '@angular/common';
-import { ContactComponent } from "../contact/contact.component";
+import { ContactComponent } from '../contact/contact.component';
 
 @Component({
   selector: 'app-projbody',

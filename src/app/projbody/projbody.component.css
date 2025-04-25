@@ -133,6 +133,15 @@
   background-position: center;
   border-radius: 24px;
 }
+.project__mid__bottomCoin {
+  height: 400px;
+  width: 100%;
+  background: url(../../asset/vascoin.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 24px;
+}
 .project__mid__bottomIvis {
   height: 400px;
   width: 100%;
