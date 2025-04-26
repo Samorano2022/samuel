@@ -71,7 +71,7 @@
 .project__text {
   font-family: "Archivo", sans-serif;
   font-size: 17px;
-  font-weight: 300;
+  font-weight: 200;
   color: #6e6e73;
   width: 100%;
   line-height: 165%;
@@ -119,6 +119,15 @@
   height: 400px;
   width: 100%;
   background: url(../../asset/special24.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 24px;
+}
+.project__mid__bottomTwoDesk {
+  height: 400px;
+  width: 100%;
+  background: url(../../asset/vascoinDesk.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
