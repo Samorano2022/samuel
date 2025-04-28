@@ -2,7 +2,7 @@
   background: var(--black);
   height: 100%;
   padding-top: 40px;
-  padding-bottom: 80px;
+  /* padding-bottom: 80px; */
   font-family: "Archivo", sans-serif;
   display: flex;
   flex-direction: column;
@@ -137,6 +137,24 @@
   height: 400px;
   width: 100%;
   background: url(../../asset/Cowrywise.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 24px;
+}
+.project__mid__bottomPort {
+  height: 400px;
+  width: 100%;
+  background: url(../../asset/teachport.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 24px;
+}
+.project__mid__bottomHotel {
+  height: 400px;
+  width: 100%;
+  background: url(../../asset/booqhotel.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;

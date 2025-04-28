@@ -4,7 +4,6 @@
       <ul>
         <li class="home" (click)="onHome()">Home</li>
         <li class="about" (click)="onConnect()">About</li>
-        <!-- <li class="expertise" (click)="onExpertise()">Expertise</li> -->
         <li class="project" (click)="onProject()">Projects</li>
         <li class="resume" (click)="onResume()">Resume</li>
         <li class="contact" (click)="onContact()">Contact Me</li>
@@ -12,7 +11,6 @@
     </div>
     <div class="project__hero">
       <div class="project__top">
-        <!-- <h1 class="project__title">Project Collection</h1> -->
         <p class="project__description">
           Project Collections: Explore my project collections,
           <span>
@@ -25,9 +23,6 @@
           projects, showcasing my expertise, craftsmanship, and dedication to
           excellence.
         </p>
-        <!-- <p> From stunning web designs to cutting-edge app/web
-            developments, each project in my collection tells a unique story of
-            collaboration, innovation, and success.</p> -->
       </div>
       <!-- Project One -->
       <div class="project__grid">
@@ -63,7 +58,9 @@
           <div class="project__mid__top">
             <div class="mid__top">
               <!-- <div class="project__number">02</div> -->
-              <div class="project__heading">VasCoin Desktop Design</div>
+              <div class="project__heading">
+                VasCoin Desktop Design <span>(In-progress)</span>
+              </div>
             </div>
             <div class="project__text">
               Your Complete Vascoin Experience, Now on Desktop. Seamlessly
@@ -86,6 +83,67 @@
           </div>
         </div>
       </div>
+
+      <div class="project__grid">
+        <div class="project__mid">
+          <div class="project__mid__bottomPort"></div>
+          <div class="project__mid__top">
+            <div class="mid__top">
+              <!-- <div class="project__number">04  </div> -->
+              <div class="project__heading">iTeach Student Portal</div>
+            </div>
+            <div class="project__text">
+              A user-friendly web platform designed to streamline academic
+              management for students. It offers features such as course
+              enrollment, course outlines, schedules, payment history, grade
+              tracking, assignment submissions, and real-time communication with
+              instructors all in one intuitive interface.
+            </div>
+            <div class="btn__link">
+              <div class="link__one">
+                <a
+                  target="_blank"
+                  href="https://www.figma.com/proto/q2byMfJuo0PSchIqWxixKm/T.A.W-Project-Website--Sample-?node-id=2089-2263&t=RE3WvTEs2jpXgw5Q-0&scaling=scale-down-width&content-scaling=fixed&page-id=328%3A111&starting-point-node-id=2089%3A2263"
+                >
+                  Preview
+                </a>
+              </div>
+              <!-- <div class="link__two">Case Study</div> -->
+            </div>
+          </div>
+        </div>
+
+        <!-- Project Two -->
+        <div class="project__mid">
+          <div class="project__mid__bottomHotel"></div>
+          <div class="project__mid__top">
+            <div class="mid__top">
+              <!-- <div class="project__number">02</div> -->
+              <div class="project__heading">
+                BooqHotel Desktop Design <span>(In-progress)</span>
+              </div>
+            </div>
+            <div class="project__text">
+              A comprehensive hotel management system that simplifies
+              reservations, guest communication, and room management. Designed
+              for efficiency and ease of use, Booqhotel empowers hotel staff to
+              deliver seamless guest experiences from check-in to check-out.
+            </div>
+            <div class="btn__link">
+              <div class="link__one">
+                <a
+                  target="_blank"
+                  href="https://www.figma.com/proto/q2byMfJuo0PSchIqWxixKm/T.A.W-Project-Website--Sample-?node-id=1750-1686&t=sRTQmYFPXBlZJse8-0&scaling=scale-down-width&content-scaling=fixed&page-id=328%3A110&starting-point-node-id=1750%3A1686&hide-ui=1"
+                >
+                  Preview
+                </a>
+              </div>
+              <!-- <div class="link__two" (click)="weddingCase()">Case Study</div> -->
+            </div>
+          </div>
+        </div>
+      </div>
+
       <div class="project__grid">
         <div class="project__mid">
           <div class="project__mid__bottomCowry"></div>
@@ -142,7 +200,6 @@
           </div>
         </div>
       </div>
-
       <div class="project__grid">
         <div class="project__mid">
           <div class="project__mid__bottom"></div>
@@ -202,7 +259,6 @@
           </div>
         </div>
       </div>
-
       <div class="project__grid">
         <div class="project__mid">
           <div class="project__mid__bottomIvis"></div>
@@ -336,7 +392,7 @@
   </div>
 
   <div class="view">
-    <div class="view__btn" (click)="allProjects()">View All Projects</div>
+    <!-- <div class="view__btn" (click)="allProjects()">View All Projects</div> -->
   </div>
 </div>
 <app-contact></app-contact>
