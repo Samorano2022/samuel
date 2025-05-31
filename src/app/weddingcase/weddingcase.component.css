@@ -1,7 +1,67 @@
 .weddingcase {
   height: 100%;
+  background: #1a1a1a;
+  padding: 100px 0;
 }
 .weddingcase__container {
   width: 80%;
   margin: auto;
+  height: 100%;
+}
+
+.skill__list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.skill__list p {
+  font-size: 18px;
+  font-weight: 300;
+  font-family: "Archivo", sans-serif;
+  font-optical-sizing: auto;
+  color: #b6b6b6;
+  line-height: 178%;
+}
+hr {
+  color: #6e6e73 !important;
+  opacity: 0.1;
+}
+.skill__title {
+  font-size: 40px;
+  font-family: "Archivo", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  color: #b6b6b6;
+  padding-bottom: 30px;
+  line-height: 140%;
+}
+.experience {
+  font-size: 34px;
+  font-weight: 600;
+  font-family: "Archivo", sans-serif;
+  font-optical-sizing: auto;
+  color: var(--white);
+  text-align: left;
+}
+
+.back__btn {
+  width: fit-content;
+  height: 50px;
+  color: var(--black);
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 24px;
+  border-radius: 100px;
+  border: 1px solid black;
+  margin-bottom: 24px;
+  font-family: "Archivo", sans-serif;
+  font-weight: 400;
+}
+.back__btn:hover {
+  background: var(--blue);
+  color: white;
+  cursor: pointer;
+  border: none;
 }
