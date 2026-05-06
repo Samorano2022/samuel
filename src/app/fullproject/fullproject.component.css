@@ -24,7 +24,10 @@ a {
   align-items: flex-start;
   gap: 40px;
 }
-
+.copyright {
+  color: white;
+  height: 40px;
+}
 .header__container {
   width: 80%;
   margin: auto;
@@ -39,6 +42,7 @@ a {
   align-items: center;
   align-items: flex-start;
   gap: 8px;
+  padding-left: 24px;
 }
 
 .mid__nav li {
@@ -158,7 +162,9 @@ a {
 .logo {
   color: white;
 }
-
+.logo img {
+  width: 100%;
+}
 .about {
   /* color: #e4f51f; */
   color: var(--blue);
@@ -172,6 +178,7 @@ a {
   color: #9587ff !important;
   text-decoration: underline;
 }
+
 
 @media screen and (max-width: 1024px) {
   .hero {
@@ -282,8 +289,13 @@ a {
     flex-direction: column;
     height: 100vh;
     width: 100%;
+    background-size: cover;
+    object-fit: cover;
+    background-position: center;
   }
-
+  .coursename {
+    font-size: 85px;
+  }
   .mid__nav {
     display: flex;
     flex-direction: row;
@@ -297,15 +309,16 @@ a {
   }
 
   .name {
-    font-size: 45px;
+    font-size: 35px;
   }
-
+  .hero__btn {
+    font-size: 22px;
+  }
   .hero__container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     /* height: 100%; */
   }
-
   .about,
   .project,
   .expert,
@@ -328,7 +341,7 @@ a {
     font-size: 19px;
   }
   .hero__cardd {
-    margin-top: 536px;
+    margin-top: 565px;
     margin-left: -250px;
     padding: 16px;
     height: 270px;
@@ -341,12 +354,45 @@ a {
 }
 
 @media screen and (max-width: 480px) {
-  .hero {
-    display: flex;
-    flex-direction: column;
+  .header__mobile {
+    background: #000;
     height: 100%;
     width: 100%;
+    position: fixed;
   }
+  .nav-brand img {
+    width: 117px;
+    height: 140px;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    width: 80%;
+    margin: auto;
+    z-index: 999;
+    height: 100%;
+  }
+  .nav-toggle {
+    flex: none;
+  }
+  .hero__container {
+    display: flex;
+  }
+  /* .nav-menu {
+    display: block;
+    background: #6c5ed6;
+  } */
+  /* .nav-menu.open {
+    transform: translateX(0);
+    height: 100%;
+    background: var(--blue);
+    border: none;
+    margin-top: 75px;
+  } */
   .header__mobile {
     display: flex;
     align-items: center;
@@ -354,11 +400,42 @@ a {
     width: 100%;
     position: absolute;
     top: 0;
+    left: 0;
     height: 80px;
     background: rgba(255, 255, 255, 0);
     transition: all ease-in-out 250ms;
+    z-index: 999;
+    overflow: hidden;
   }
-  .mobile__container {
+
+  .nav-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--blue);
+    z-index: 999;
+    padding: 26px 18px;
+  }
+  .active.nav-menu {
+    z-index: 999;
+  }
+  ul.nav-menu.open {
+    border: none;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 110px 0;
+  }
+
+  .hero {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+  }
+  /* .mobile__header {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -368,7 +445,19 @@ a {
     height: 80px;
     background: rgba(255, 255, 255, 0);
     transition: all ease-in-out 250ms;
+    display: block;
   }
+.mobile__container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  height: 80px;
+  background: rgba(255, 255, 255, 0);
+  transition: all ease-in-out 250ms;
+}
   p {
     font-size: 84px;
   }
@@ -377,5 +466,67 @@ a {
   }
   .name {
     font-size: 24px;
+  }
+  .coursename {
+    font-size: 57px;
+  }
+  .port__desc {
+    font-size: 16px;
+  }
+  .hero__btn {
+    padding: 12px 14px;
+    border-radius: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: 400;
+    background: var(--blue);
+    color: white;
+  }
+  .copyright {
+    color: white;
+    height: 40px;
+    text-align: center;
+    font-size: 14px;
+  }
+  .mobile__left {
+    color: #f8f8f8;
+  }
+  .hero__cardd {
+    padding: 16px;
+    height: 240px;
+    width: 400px;
+    background: #0d0b0b;
+    border-radius: 24px;
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+  }
+  .name {
+    font-size: 26px;
+    color: #bdb4ff;
+    border-radius: 100px;
+    font-family: "Archivo", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    margin-bottom: 8px;
+    width: 100%;
+  }
+  li {
+    color: white;
+    list-style: none;
+    font-size: 16px;
+  }
+  .about,
+  .project,
+  .expert,
+  .resume,
+  .contact {
+    font-size: 24px !important;
+    color: white;
+  }
+  .cancel__btn {
+    margin-top: 30%;
   }
 }

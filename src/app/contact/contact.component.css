@@ -1,15 +1,13 @@
-.contact-container {
-  /* max-width: 600px; */
+.about-container {
   width: 80%;
   margin: auto;
   height: 100%;
   padding: 30px;
-  /* background-color: #1d1d1d; */
   border-radius: 0px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
 }
-.contact__section{
-  height: 100vh;
+.about__section {
+  height: 100%;
   width: 100vw;
   background-color: #1d1d1d;
 }
@@ -28,7 +26,7 @@ header p {
 .contact-methods {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 12px;
 }
 
 .contact-method {
@@ -46,8 +44,10 @@ header p {
 }
 
 .contact-method i {
-  font-size: 24px;
-  margin-right: 15px;
+  font-size: 17px;
+  font-family: "Archivo", sans-serif;
+  font-weight: 200;
+  /* margin-right: 15px; */
 }
 
 .contact-method:hover {
@@ -57,21 +57,15 @@ header p {
 
 .contact-method span {
   font-weight: 600;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
 }
 
-.whatsapp {
-  background-color: #25D366;
-}
-
-.email {
-  background-color: #D44638;
-}
-
+.whatsapp,
+.email,
 .linkedin {
-  background-color: #0077B5;
+  background-color: #dfdee3;
+  color: var(--gold);
 }
-
 
 /* Copied css from about section */
 
@@ -100,9 +94,9 @@ header p {
   margin: auto;
   border-radius: 100px;
   position: fixed;
-  box-shadow: -7px -6px 244px 5px rgba(31,27,202,0.75);
--webkit-box-shadow: -7px -6px 244px 5px rgba(31,27,202,0.75);
--moz-box-shadow: -7px -6px 244px 5px rgba(31,27,202,0.75);
+  box-shadow: -7px -6px 244px 5px rgba(31, 27, 202, 0.75);
+  -webkit-box-shadow: -7px -6px 244px 5px rgba(31, 27, 202, 0.75);
+  -moz-box-shadow: -7px -6px 244px 5px rgba(31, 27, 202, 0.75);
 }
 .about__card {
   background: #181717;
@@ -143,7 +137,7 @@ header p {
   gap: 52px;
   /* padding-top: 55px; */
 }
-.about__bottomcontainer{
+.about__bottomcontainer {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -156,7 +150,7 @@ header p {
 }
 .about__bottom {
   width: 100%;
-  height: 450px;
+  height: 300px;
   background: #3827c7;
   /* padding-left: 42px;
   padding-top: 56px; */
@@ -173,16 +167,16 @@ header p {
   border-radius: 100px;
 }
 .experience {
-  font-size: 34px;
-  font-weight: 600;
+  font-size: 25px;
+  font-weight: 500;
   font-family: "Archivo", sans-serif;
   font-optical-sizing: auto;
   color: var(--white);
-  padding-bottom: 14px;
+  padding-bottom: 4px;
 }
 .exp__text {
   font-family: "Archivo", sans-serif;
-  font-size: 18px;
+  font-size: 15px;
   font-weight: 200;
   line-height: 150%;
   color: var(--white);
@@ -203,7 +197,7 @@ header p {
   font-optical-sizing: auto;
   color: #a3a3a3;
 }
-hr{
+hr {
   color: #6e6e73 !important;
   opacity: 0.1;
 }
@@ -234,7 +228,7 @@ ul {
 
 ul li {
   list-style: none;
-  color: #C4C4C4;
+  color: #c4c4c4;
   font-family: "Archivo", sans-serif;
   font-size: 16px;
   font-weight: 400;
@@ -243,7 +237,7 @@ ul li:hover {
   cursor: pointer;
   color: #9587ff !important;
 }
-.expertise{
+.expertise {
   width: 100vw;
 }
 
@@ -251,6 +245,60 @@ ul li:hover {
 @media (min-width: 768px) {
   .contact-methods {
     flex-direction: row;
-    justify-content: space-between;
+    gap: 12px;
+    /* justify-content: space-between; */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  ul {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 24px;
+  }
+
+  ul li {
+    list-style: none;
+    color: #c4c4c4;
+    font-family: "Archivo", sans-serif;
+    font-size: 10px;
+    font-weight: 400;
+  }
+  .description {
+    font-size: 20px;
+    color: #efefef;
+    font-family: "Archivo", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    line-height: 140%;
+  }
+  .about__bottom {
+    width: 100%;
+    height: 100%;
+    background: #3827c7;
+    padding: 26px 26px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .contact-method span {
+    font-weight: 600;
+    font-size: 16px;
+  }
+  .exp__text {
+    font-family: "Archivo", sans-serif;
+    font-size: 12px;
+    font-weight: 200;
+    line-height: 150%;
+    color: var(--white);
+  }
+  .about__card {
+    background: #181717;
+    height: 100%;
+    width: 100%;
+    padding-bottom: 60px;
+    margin-top: 30%;
   }
 }

@@ -61,7 +61,6 @@
   .interaction {
     width: 100%;
     height: 500px;
-    background: url(../../asset/inter.png);
     background-size: cover;
     background-repeat: no-repeat;
     object-fit: contain;
