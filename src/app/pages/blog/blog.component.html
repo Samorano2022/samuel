@@ -1,0 +1,12 @@
+<div *ngFor="let blog of blogs">
+  <h2>{{ blog.attributes.title }}</h2>
+
+  <img 
+    [src]="'http://localhost:1337' + blog.attributes.coverImage.data.attributes.url" 
+    width="300"
+  />
+
+  <p [innerHTML]="blog.attributes.content"></p>
+
+  <a [routerLink]="['/blog', blog.attributes.slug]">Read more</a>
+</div>

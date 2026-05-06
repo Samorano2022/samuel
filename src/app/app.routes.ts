@@ -4,9 +4,9 @@ import { ProfileComponent } from './profile/profile.component';
 import { ExpertComponent } from './expert/expert.component';
 import { ProjbodyComponent } from './projbody/projbody.component';
 import { ContactComponent } from './contact/contact.component';
-import { AllprojectComponent } from './allproject/allproject.component';
-import { ResumeComponent } from './resume/resume.component';
-import { WeddingcaseComponent } from './weddingcase/weddingcase.component';
+import { BlogComponent } from './pages/blog/blog.component';
+import { NewsComponent } from './pages/news/news.component';
+import { BlogDetailComponent } from './pages/blog-detail/blog-detail.component';
 
 export const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -15,7 +15,7 @@ export const routes: Routes = [
   { path: 'expertise', component: ExpertComponent },
   { path: 'project', component: ProjbodyComponent },
   { path: 'contact', component: ContactComponent },
-  { path: 'allprojects', component: AllprojectComponent },
-  { path: 'resume', component: ResumeComponent },
-  { path: 'casestudy', component: WeddingcaseComponent },
+  { path: 'blog', component: BlogComponent },
+  { path: 'blog/:slug', component: BlogDetailComponent },
+  { path: 'news', component: NewsComponent }
 ];
